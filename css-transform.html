@@ -1,1 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Transform Images: Japan</title>
 
+    <style>
+      .palace-mountain {
+        width: 200px;
+        transition: all 200ms ease-in;
+      }
+
+      .palace-mountain:hover {
+        transform: scale(1.25) translateX(300px) translateY(150px);
+      }
+
+      .shopping-alley {
+        width: 300px;
+        transform: rotate(45deg) translateY(250px) translateX(150px);
+      }
+
+      .sea-entrance {
+        max-width: 200px;
+        transform: rotate(-25deg) translateX(-300px) translateY(-65px);
+      }
+
+      .sea-palace {
+        width: 180px;
+        transform: rotate(15deg) translateX(-275px) translateY(105px);
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="https://blog.sakura.co/wp-content/uploads/2023/03/Sakuraco_osaka6-1.jpg"
+      alt="Japanese palace with mountain in the background and cherry blossons in the foreground"
+      class="palace-mountain"
+    />
+    <img
+      src="https://lp-cms-production.imgix.net/2023-02/GettyImages-1071391480.jpeg"
+      alt="Busy Japanese shopping alley"
+      class="shopping-alley"
+    />
+    <img
+      src="https://girleatworld.net/wp-content/uploads/2024/08/hiroshima-itsukushima-shrine.jpg"
+      alt="Red entrance in the sea"
+      class="sea-entrance"
+    />
+    <img
+      src="https://travel.rakuten.com/contents/sites/contents/files/styles/max_1300x1300/public/2024-01/cherry-blossom-osaka_11.jpg?itok=DV1kX0vx"
+      alt="Japanese palace by the sea"
+      class="sea-palace"
+    />
+  </body>
+</html>
