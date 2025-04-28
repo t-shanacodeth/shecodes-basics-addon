@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode</title>
 
+    <style>
+        button {
+            background-color: black;
+            color: whitesmoke;
+        }
+
+        .dark-mode-button {
+            background-color: whitesmoke;
+            color: black;
+        }
+
+        .dark {
+            background-color: black;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <button>
+        Dark Mode
+    </button>
+
+    <script>
+        let button = document.querySelector("button");
+        let body = document.querySelector("body");
+
+        function enableDarkMode() {
+            body.classList.add("dark");
+            button.classList.add("dark-mode-button");
+            console.log("This is dark mode");
+        };
+
+        button.addEventListener("click", enableDarkMode);
+
+
+    </script>
+</body>
+</html>
