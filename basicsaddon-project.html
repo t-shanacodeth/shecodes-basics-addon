@@ -15,17 +15,6 @@
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       }
 
-      img {
-        height: 250px;
-        border-radius: 10px;
-        transition: all 150ms ease-in-out;
-      }
-
-      img:hover {
-        transform: scale(1.1);
-        filter: contrast(0.6);
-      }
-
       a {
         text-decoration: none;
       }
@@ -46,6 +35,18 @@
         display: flex;
         align-items: center;
         flex-direction: column;
+      }
+
+      .hero-kdrama-image {
+        width: 85%;
+        margin: 15px 55px;
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+      }
+
+      .hero-kdrama-image:hover {
+        transform: scale(1.05);
+        filter: contrast(0.7);
       }
 
       button {
@@ -78,7 +79,22 @@
       }
 
       .image-gallery {
-        margin: 20px 0;
+        margin: 5px 0 15px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 12px;
+      }
+
+      .image-gallery img {
+        height: 220px;
+        width: 150px;
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+      }
+
+      .image-gallery img:hover {
+        transform: scale(1.1);
+        filter: contrast(0.7);
       }
 
       .kdrama-description {
@@ -91,6 +107,7 @@
 
       p {
         font-size: 0.9rem;
+        line-height: 1.5;
       }
 
       footer {
@@ -109,6 +126,17 @@
         <h1>K-Drama Central</h1>
         <h2>Great Entertainment Straight from South Korea 🇰🇷</h2>
       </header>
+
+      <a
+          href="https://en.wikipedia.org/wiki/The_Glory_(TV_series)"
+          target="_blank"
+        >
+          <img
+            src="https://occ-0-8407-92.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABeizdHXVC_vwnnDSO7vimaI_URC1-d70VShgT8-1-ylEFN8IBtKhsj1qw48HbuJ_V-PPgGKVzRzDTD_ffGc-hXDfURLXQ6CmnsTfueqUTy5wNpxfplKGvNVsEfnH4OD2gKsKGA.webp?r=3d2"
+            alt="The Glory poster"
+            class="hero-kdrama-image"
+          />
+        </a>
 
       <div class="image-gallery">
         <a
@@ -145,15 +173,6 @@
           <img
             src="https://images.plex.tv/photo?size=large-1920&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F899KcBqooj8nEyPcAEU3h7AdfUo.jpg"
             alt="Marry My Husband poster"
-          />
-        </a>
-        <a
-          href="https://en.wikipedia.org/wiki/True_Beauty_%28South_Korean_TV_series%29"
-          target="_blank"
-        >
-          <img
-            src="https://static0.srcdn.com/wordpress/wp-content/uploads/2024/06/true-beauty.jpg"
-            alt="True Beauty poster"
           />
         </a>
       </div>
