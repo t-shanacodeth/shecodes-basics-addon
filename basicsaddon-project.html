@@ -11,7 +11,7 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        background-color: #DDC4DD;
+        background: linear-gradient(45deg, #ee9ca7 25%, #ffdde1 75%);
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       }
 
@@ -29,6 +29,7 @@
         margin: 30px 0;
         padding: 45px 25px;
         border-radius: 10px;
+        box-shadow: 0px 0px 25px 3px rgba(0, 0, 0, 0.15);
       }
 
       header {
@@ -38,8 +39,8 @@
       }
 
       .hero-kdrama-image {
-        width: 85%;
-        margin: 15px 55px;
+        width: 88%;
+        margin: 15px 45px;
         border-radius: 10px;
         transition: all 150ms ease-in-out;
       }
@@ -87,7 +88,7 @@
 
       .image-gallery img {
         height: 220px;
-        width: 150px;
+        width: 155px;
         border-radius: 10px;
         transition: all 150ms ease-in-out;
       }
@@ -107,7 +108,7 @@
 
       p {
         font-size: 0.9rem;
-        line-height: 1.5;
+        line-height: 2;
       }
 
       footer {
@@ -115,11 +116,39 @@
         margin-bottom: 35px;
       }
 
-     
+      /* DARK MODE STYLING */
+
+      .dark-mode {
+        background: linear-gradient(115deg, rgb(0, 0, 0) 5.8%, rgb(178, 14, 14) 112.6%);
+        color: whitesmoke;
+      }
+
+      .dark-mode button {
+        background-color: palevioletred;
+        color: whitesmoke;
+      }
+
+      .dark-mode button:hover {
+        background-color: #d3d3d3;
+        color: palevioletred;
+      }
+
+      .dark-mode .dark-mode-toggle {
+        background-color: #ededed;
+        color: black;
+      }
+
+      .dark-mode .dark-mode-toggle:hover {
+        background-color: #ededed;
+      }
+
+      .dark-mode .container {
+        background-color: #2c2c2c;
+      }
     </style>
   </head>
   <body>
-    <button class="dark-mode-toggle">Dark Mode</button>
+    <button class="dark-mode-toggle">Change Appearance</button>
 
     <div class="container">
       <header>
@@ -209,8 +238,22 @@
       <button class="recommendations">Find your next K-drama</button>
     </div>
 
-    <footer>Coded by Tishana</footer>
+    <footer>Coded with ... by Tishana</footer>
 
-    <script></script>
+    <script>
+      let changeAppearanceButton = document.querySelector(".dark-mode-toggle");
+      changeAppearanceButton.addEventListener("click", changeAppearance);
+
+      function changeAppearance() {
+        let body = document.querySelector("body");
+
+        if (body.classList.contains("dark-mode")) {
+          body.classList.remove("dark-mode");
+        } else {
+          body.classList.add("dark-mode");
+        }
+      };
+      
+    </script>
   </body>
 </html>
