@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>K-Drama - My Hobby</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cutive&display=swap"
+      rel="stylesheet"
+    />
+
     <style>
       body {
         display: flex;
@@ -56,6 +63,7 @@
         margin: 15px auto;
         padding: 8px 15px;
         font-size: 0.8rem;
+        font-weight: 600;
         text-transform: uppercase;
         transition: all 175ms ease-in-out;
         border: 1px solid palevioletred;
@@ -114,10 +122,16 @@
       }
 
       footer {
-        font-size: 0.9rem;
-        font-weight: 700;
+        font-family: Cutive, serif;
+        font-size: 0.7rem;
+        font-weight: 400;
+        word-spacing: 2px;
         margin-bottom: 35px;
         color: whitesmoke;
+      }
+
+      footer span {
+        font-size: 20px;
       }
 
       footer a {
@@ -248,20 +262,24 @@
         </p>
       </div>
 
-      <button class="recommendations">Find your next K-drama</button>
+      <button class="recommendations" onclick="goToViki()">
+        Find your next K-drama
+      </button>
     </div>
 
     <footer>
-      Coded with 🫶🏾 by
+      Coded with <span>🫶🏾</span> by
       <a
         href="https://www.linkedin.com/in/tishana-b-a3835a26b/"
         target="_blank"
       >
         Tishana
       </a>
+      with HTML, CSS and JavaScript
     </footer>
 
     <script>
+      // Toggle between light and dark mode
       let changeAppearanceButton = document.querySelector(".dark-mode-toggle");
       changeAppearanceButton.addEventListener("click", changeAppearance);
 
@@ -273,6 +291,11 @@
         } else {
           body.classList.add("dark-mode");
         }
+      }
+
+      // Navigate to website to watch kdramas
+      function goToViki() {
+        window.location.href = "https://www.viki.com/";
       }
     </script>
   </body>
