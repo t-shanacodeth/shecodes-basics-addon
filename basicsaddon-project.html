@@ -12,7 +12,9 @@
         justify-content: center;
         flex-direction: column;
         background: linear-gradient(45deg, #ee9ca7 25%, #ffdde1 75%);
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
       }
 
       a {
@@ -69,14 +71,14 @@
 
       .dark-mode-toggle {
         font-size: 0.7rem;
-        background-color: #430E18;
-        border: 1px solid #430E18;
+        background-color: #430e18;
+        border: 1px solid #430e18;
         color: whitesmoke;
       }
 
       .dark-mode-toggle:hover {
         background-color: whitesmoke;
-        color: #430E18;
+        color: #430e18;
       }
 
       .image-gallery {
@@ -112,14 +114,25 @@
       }
 
       footer {
-        font-size: 0.75rem;
+        font-size: 0.9rem;
+        font-weight: 700;
         margin-bottom: 35px;
+        color: whitesmoke;
+      }
+
+      footer a {
+        color: rgb(210, 70, 116);
+        text-decoration: underline;
       }
 
       /* DARK MODE STYLING */
 
       .dark-mode {
-        background: linear-gradient(115deg, rgb(0, 0, 0) 5.8%, rgb(178, 14, 14) 112.6%);
+        background: linear-gradient(
+          115deg,
+          rgb(0, 0, 0) 5.8%,
+          rgb(178, 14, 14) 112.6%
+        );
         color: whitesmoke;
       }
 
@@ -134,7 +147,7 @@
       }
 
       .dark-mode .dark-mode-toggle {
-        background-color: #ededed;
+        background-color: #ffdde1;
         color: black;
       }
 
@@ -157,15 +170,15 @@
       </header>
 
       <a
-          href="https://en.wikipedia.org/wiki/The_Glory_(TV_series)"
-          target="_blank"
-        >
-          <img
-            src="https://occ-0-8407-92.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABeizdHXVC_vwnnDSO7vimaI_URC1-d70VShgT8-1-ylEFN8IBtKhsj1qw48HbuJ_V-PPgGKVzRzDTD_ffGc-hXDfURLXQ6CmnsTfueqUTy5wNpxfplKGvNVsEfnH4OD2gKsKGA.webp?r=3d2"
-            alt="The Glory poster"
-            class="hero-kdrama-image"
-          />
-        </a>
+        href="https://en.wikipedia.org/wiki/The_Glory_(TV_series)"
+        target="_blank"
+      >
+        <img
+          src="https://occ-0-8407-92.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABeizdHXVC_vwnnDSO7vimaI_URC1-d70VShgT8-1-ylEFN8IBtKhsj1qw48HbuJ_V-PPgGKVzRzDTD_ffGc-hXDfURLXQ6CmnsTfueqUTy5wNpxfplKGvNVsEfnH4OD2gKsKGA.webp?r=3d2"
+          alt="The Glory poster"
+          class="hero-kdrama-image"
+        />
+      </a>
 
       <div class="image-gallery">
         <a
@@ -238,7 +251,15 @@
       <button class="recommendations">Find your next K-drama</button>
     </div>
 
-    <footer>Coded with ... by Tishana</footer>
+    <footer>
+      Coded with 🫶🏾 by
+      <a
+        href="https://www.linkedin.com/in/tishana-b-a3835a26b/"
+        target="_blank"
+      >
+        Tishana
+      </a>
+    </footer>
 
     <script>
       let changeAppearanceButton = document.querySelector(".dark-mode-toggle");
@@ -252,8 +273,7 @@
         } else {
           body.classList.add("dark-mode");
         }
-      };
-      
+      }
     </script>
   </body>
 </html>
